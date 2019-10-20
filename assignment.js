@@ -32,6 +32,14 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+function multiplicationTable(number) {
+  for (let i = 0; i < 13; i++) {
+    console.log(number * i)
+  }
+}
+
+multiplicationTable(2)
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +73,17 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+let values1 = [57, 13, 4, 38]
+let values2 = [3, 48, 29, 12, 18]
+
+function maxnum(array) {
+  console.log(Math.max(...array));
+}
+
+maxnum(values1)
+maxnum(values2)
+
 
 // Add your code above this line
 
@@ -112,6 +131,39 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+function  rockPaperScissors(playerA, playerB) {
+  let result = ""
+
+  if (playerA === playerB) {
+    result = "tie"
+  } else if (playerA === "rock") {
+      if (playerB === "paper") {
+        result = "playerB wins!"
+      } else {
+        result = "playerA wins!"
+      }
+  } else if (playerA === "paper") {
+    if (playerB === "scissors") {
+      result = "playerB wins!"
+    } else {
+      result = "playerA wins!"
+    }
+  }  else if (playerA === "scissors") {
+    if (playerB === "rock") {
+      result = "playerB wins!"
+    } else {
+      result = "playerA wins!"
+    }
+  }
+  console.log(result)
+}
+
+rockPaperScissors("rock", "paper")
+rockPaperScissors("scissors", "scissors")
+rockPaperScissors("scissors", "paper")
+
+
 
 // Add your code above this line
 
